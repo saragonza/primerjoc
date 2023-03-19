@@ -34,3 +34,4 @@ func _on_triangle_body_entered(body):
 
 func _on_final_body_entered(body):
 	moviment = Vector2.ZERO
+	

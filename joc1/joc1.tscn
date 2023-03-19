@@ -27,15 +27,19 @@ position = Vector2( 95, -54.2857 )
 position = Vector2( 187.857, -107.143 )
 
 [node name="bloc32" parent="bloc" instance=ExtResource( 4 )]
-position = Vector2( 4461.43, -451.429 )
+position = Vector2( 4461.43, -465 )
 scale = Vector2( 1.2, 1.5 )
 
 [node name="bloc34" parent="bloc" instance=ExtResource( 4 )]
-position = Vector2( 4716.43, -453.571 )
+position = Vector2( 4762.86, -467.142 )
 scale = Vector2( 1.2, 1.5 )
 
+[node name="bloc36" parent="bloc" instance=ExtResource( 4 )]
+position = Vector2( 5917.14, -567.857 )
+scale = Vector2( 20, 12 )
+
 [node name="bloc35" parent="bloc" instance=ExtResource( 4 )]
-position = Vector2( 4591.43, -452.857 )
+position = Vector2( 4611.43, -466.428 )
 scale = Vector2( 1.2, 1.5 )
 
 [node name="bloc4" parent="bloc" instance=ExtResource( 4 )]
@@ -163,8 +167,8 @@ position = Vector2( 5133.57, -316.429 )
 scale = Vector2( 50, 0.7 )
 
 [node name="bloc29" parent="bloc" instance=ExtResource( 4 )]
-position = Vector2( 3695, -128.571 )
-scale = Vector2( 3.2, 0.7 )
+position = Vector2( 3688.57, -128.571 )
+scale = Vector2( 3.5, 0.7 )
 
 [node name="triangle" parent="." instance=ExtResource( 5 )]
 position = Vector2( 603, 557 )
@@ -256,32 +260,32 @@ position = Vector2( 3293, -3639.48 )
 rotation = 3.31137e-08
 
 [node name="triangle29" parent="triangle" instance=ExtResource( 5 )]
-position = Vector2( 3935.76, -4809.74 )
+position = Vector2( 3922.33, -4823.18 )
 rotation = 3.31137e-08
 scale = Vector2( 1.2, 1.2 )
 
 [node name="triangle32" parent="triangle" instance=ExtResource( 5 )]
-position = Vector2( 4092.03, -4786.41 )
+position = Vector2( 4099.1, -4793.48 )
 rotation = 3.31137e-08
-scale = Vector2( 1.2, 1.2 )
+scale = Vector2( 1.1, 1.1 )
 
 [node name="triangle33" parent="triangle" instance=ExtResource( 5 )]
-position = Vector2( 4217.89, -4912.27 )
+position = Vector2( 4251.12, -4945.5 )
 rotation = 3.31137e-08
-scale = Vector2( 1.2, 1.2 )
+scale = Vector2( 1.1, 1.1 )
 
 [node name="triangle34" parent="triangle" instance=ExtResource( 5 )]
-position = Vector2( 4354.36, -5048.75 )
+position = Vector2( 4412.34, -5106.73 )
 rotation = 3.31137e-08
-scale = Vector2( 1.2, 1.2 )
+scale = Vector2( 1.1, 1.1 )
 
 [node name="triangle31" parent="triangle" instance=ExtResource( 5 )]
-position = Vector2( 4186.78, -5063.59 )
+position = Vector2( 4219.31, -5122.99 )
 rotation = 3.31137e-08
 scale = Vector2( 1.2, 1.2 )
 
 [node name="triangle30" parent="triangle" instance=ExtResource( 5 )]
-position = Vector2( 4063.04, -4939.85 )
+position = Vector2( 4069.4, -4973.08 )
 rotation = 3.31137e-08
 scale = Vector2( 1.2, 1.2 )
 
@@ -324,7 +328,10 @@ rotation = 3.31137e-08
 scale = Vector2( 1.8, 1.8 )
 
 [node name="final" parent="." instance=ExtResource( 6 )]
-position = Vector2( 7785, 23 )
+position = Vector2( 7784, 3 )
+
+[node name="final2" parent="." instance=ExtResource( 6 )]
+position = Vector2( 7784, -111 )
 
 [connection signal="body_entered" from="triangle" to="personatge" method="_on_triangle_body_entered"]
 [connection signal="body_entered" from="triangle/triangle2" to="personatge" method="_on_triangle_body_entered"]
@@ -361,3 +368,4 @@ position = Vector2( 7785, 23 )
 [connection signal="body_entered" from="triangle/triangle20" to="personatge" method="_on_triangle_body_entered"]
 [connection signal="body_entered" from="triangle/triangle21" to="personatge" method="_on_triangle_body_entered"]
 [connection signal="body_entered" from="final" to="personatge" method="_on_final_body_entered"]
+[connection signal="body_entered" from="final2" to="personatge" method="_on_final_body_entered"]
